@@ -1,0 +1,277 @@
+/* Pantalla de inicio */
+body
+{
+    margin: 0;
+    background-color: rgb(225, 0, 255);
+    color: #e7cce3;
+    font-size:x-large;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#home_div_container
+{
+    position: relative;
+    width: 100%;
+    float: inline-start;
+}
+
+#home_image_div
+{
+    position: absolute;
+    inset: 0;
+}
+
+#home_bg_image
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#home_content_div
+{
+    display: grid;
+    position: absolute;
+    inset: 0;
+
+    justify-items: center;
+    align-items:center;
+}
+
+#home_bar
+{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%;
+    height: 25%; */
+}
+
+#home_bar_row_1
+{
+    display: flex;
+    flex-direction: row;
+    flex:10;
+}
+
+#home_bar_row_2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex:1;
+}
+
+#profile_picture_div
+{
+    display: grid;
+    flex: 1;
+
+    align-items: center;
+    justify-items: center;
+}
+
+#text_div
+{
+    display: grid;
+    flex: 2;
+
+    align-items: center;
+    justify-items: left;
+}
+
+#home_name
+{
+    margin-bottom: 5px;
+    margin-left: 15px;
+    color: #97a6a3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
+}
+
+#home_subtitle
+{
+    margin-top: 5px;
+    margin-left: 15px;
+    color: #97a6a3;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
+}
+
+/* Secciones del portfolio (información) */
+
+#content_container
+{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(198deg, rgba(2,0,36,1) 0%, rgba(81,15,135,1) 52%, rgba(32,153,177,1) 100%);
+}
+
+.profile-section
+{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin-bottom: 150px;
+}
+
+.profile-section.sticked-left
+{
+    align-self: flex-start;
+}
+
+.profile-section.sticked-right
+{
+    align-self: flex-end;
+}
+
+.profile-section>*{
+    text-align: left;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.profile-section.sticked-left>*{
+    margin-left: 150px;
+    background: linear-gradient(90deg, rgba(93,86,203,0.5522584033613445) 0%, rgb(58, 109, 168) 33%);
+}
+
+.profile-section.sticked-right>*{
+    margin-right: 150px;
+    background: linear-gradient(-90deg, rgba(93,86,203,0.5522584033613445) 0%, rgba(58, 109, 168) 33%);
+}
+
+hr
+{
+    border-width: 1px;
+    border-color:  #1a1a1a;
+}
+
+#social_div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    height: 100px;
+    background-color: #1a1a1a;
+}
+
+a, a:visited{
+    color:#e4cdd8
+}
+
+.social-element input
+{
+    margin-right: 15px;
+}
+
+.social-element
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    margin: 0px;
+    background-color: #dabac5;
+}
+
+#footer h2{
+    background-color: #8f6473;
+    padding: 15px;
+    margin-top: 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.form-div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+}
+.form-div *
+{
+    margin-bottom: 15px;
+}
+.form-div *::placeholder
+{
+    text-align: center;
+    justify-self: center;
+}
+.form-div input
+{
+    width: 200px;
+    height: 40px;
+}
+.form-div textarea
+{    
+    width: 200px;
+    height: 80px;
+}
+.form-div h2
+{
+    color: #1a1a1a;
+}
+
+/*------------------------------------------------ Sobreescribir propiedades -----------------------------------------------------------*/
+
+.profile-section.sticked-left h2
+{
+    margin-left: 0px;
+    width: 60%;
+    text-align: right;
+
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.profile-section.sticked-right h2
+{
+    margin-right: 0px;
+    width: 60%;
+    align-self: flex-end;
+    text-align: left;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+}
+
+.profile-section>ul
+{
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 80px;
+}
+
+.profile-section li
+{
+    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-indent: -30px;
+}
+
+.profile-section>table{
+text-align: left;
+}
+
+.profile-section th, .profile-section td{
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+h1, h2,th{
+    text-shadow: 1px 1px 3px #0e0f3a;
+}
